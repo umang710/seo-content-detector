@@ -6,7 +6,7 @@
 ## Setup Instructions
 
 go to **bash**
-* git clone https://github.com/yourusername/seo-content-detector
+* git clone https://github.com/umang710/seo-content-detector
 * cd seo-content-detector
 * pip install -r requirements.txt
 * jupyter notebook notebooks/seo_pipeline.ipynb
@@ -21,7 +21,7 @@ go to **bash**
 * For real-time analysis, use the **analyze_url()** function in the notebook
 
 ## Deployed Streamlit App
-[Insert your deployed Streamlit Cloud URL here]
+https://seo-content-detector-umang710.streamlit.app/
 
 ## Key Decisions
 **Libraries:** BeautifulSoup (HTML parsing), scikit-learn (ML), textstat (readability)
