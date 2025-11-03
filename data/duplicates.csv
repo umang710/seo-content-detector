@@ -1,0 +1,16 @@
+url1,url2,similarity
+https://nordlayer.com/learn/network-security/basics/,https://www.fortinet.com/resources/cyberglossary/what-is-network-security,0.802
+https://www.fortinet.com/resources/cyberglossary/what-is-network-security,https://www.cisco.com/site/us/en/learn/topics/security/what-is-network-security.html,0.846
+https://en.wikipedia.org/wiki/SD-WAN,https://www.cisco.com/site/us/en/learn/topics/networking/what-is-sd-wan.html,0.808
+https://www.microsoft.com/en-us/security/business/security-101/what-is-zero-trust-network-access-ztna,https://www.zscaler.com/resources/security-terms-glossary/what-is-zero-trust-network-access,0.895
+https://sign.dropbox.com/products/dropbox-fax,https://www.fax.plus/,0.873
+https://sign.dropbox.com/products/dropbox-fax,https://comfax.com/reviews/free-fax/,0.824
+https://www.fax.plus/,https://comfax.com/reviews/free-fax/,0.807
+https://nytlicensing.com/latest/trends/content-marketing-best-practices-2022/,https://copyblogger.com/content-marketing/,0.85
+https://nytlicensing.com/latest/trends/content-marketing-best-practices-2022/,https://www.twilio.com/en-us/blog/insights/content-marketing-best-practices,0.852
+https://nytlicensing.com/latest/trends/content-marketing-best-practices-2022/,https://www.coursera.org/articles/content-strategy,0.858
+https://nytlicensing.com/latest/trends/content-marketing-best-practices-2022/,https://mailchimp.com/marketing-glossary/content-marketing/,0.844
+https://copyblogger.com/content-marketing/,https://www.twilio.com/en-us/blog/insights/content-marketing-best-practices,0.851
+https://copyblogger.com/content-marketing/,https://mailchimp.com/marketing-glossary/content-marketing/,0.845
+https://www.twilio.com/en-us/blog/insights/content-marketing-best-practices,https://mailchimp.com/marketing-glossary/content-marketing/,0.802
+https://en.wikipedia.org/wiki/Machine_learning,https://simple.wikipedia.org/wiki/Machine_learning,0.823
