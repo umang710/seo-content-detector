@@ -41,7 +41,7 @@ st.markdown("""
         border-left: 4px solid #3B82F6;
     }
     .success-banner {
-        background-color: #D1FAE5;
+        background-color: #1E40AF;
         padding: 1rem;
         border-radius: 10px;
         border: 1px solid #10B981;
