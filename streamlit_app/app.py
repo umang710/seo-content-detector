@@ -232,7 +232,7 @@ with input_col:
     )
 
 with button_col:
-    analyze_btn = st.button("🚀 Analyze", type="primary", use_container_width=True)
+    analyze_btn = st.button("Analyze", type="primary", use_container_width=True)
 
 if analyze_btn and url:
     if not url.startswith(('http://', 'https://')):
