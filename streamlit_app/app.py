@@ -49,14 +49,36 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Load model and data
+# Universal file path loader
+def load_file_smart(relative_path):
+    """Try multiple path options to find files"""
+    paths_to_try = [
+        relative_path,                    # Streamlit Cloud
+        f'../{relative_path}',           # Local development
+        f'../../{relative_path}',        # Alternative local
+    ]
+    
+    for path in paths_to_try:
+        if os.path.exists(path):
+            return path
+    
+    # If no path works, return the original and let it fail with clear error
+    return relative_path
+
+# Load model and data with universal paths
 @st.cache_resource
 def load_model():
-    return joblib.load('../models/quality_model.pkl')
+    model_path = load_file_smart('models/quality_model.pkl')
+    return joblib.load(model_path)
 
 @st.cache_data
 def load_data():
-    return pd.read_csv('../data/features.csv')
+    features_path = load_file_smart('data/features.csv')
+    extracted_path = load_file_smart('data/extracted_content.csv')
+    
+    features = pd.read_csv(features_path)
+    extracted = pd.read_csv(extracted_path)
+    return features, extracted
 
 def scrape_and_parse_url(url):
     """Enhanced scraping with better headers and error handling"""
@@ -184,10 +206,8 @@ def improved_similarity(target_url, target_text, existing_data, top_n=5):
 # Load data
 try:
     model = load_model()
-    existing_data = load_data()
-    # Load extracted content for better similarity
-    extracted_data = pd.read_csv('../data/extracted_content.csv')
-    # Merge with features
+    existing_data, extracted_data = load_data()
+    # Merge with features for similarity
     enhanced_data = extracted_data.merge(existing_data, on='url', how='left')
 except Exception as e:
     st.error(f"Error loading data: {e}")
